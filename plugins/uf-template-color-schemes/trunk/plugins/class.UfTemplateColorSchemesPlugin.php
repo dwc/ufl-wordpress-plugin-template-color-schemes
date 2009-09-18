@@ -25,6 +25,7 @@ if (! class_exists('UfTemplateColorSchemesPlugin')) {
 				    new UfImageRadioOption('uf_template_color_scheme', '08a', 'Color Scheme 8', $this->source . '08a.jpg'),
 				)),
 			);
+
 			$this->add_admin_page(new UfOptionsPage($name, '', $options));
 
 			$this->color_scheme = $color_scheme;

@@ -3,7 +3,7 @@
 Plugin Name: UF Template Color Schemes
 Version: 0.1
 Plugin URI: http://www.webadmin.ufl.edu/
-Description: Color scheme selector for WordPress themes based on UF Templates.
+Description: Color scheme selector for WordPress themes based on University of Florida <a href="http://www.webadmin.ufl.edu/templates">Templates</a>.
 Author: Joey Spooner <spooner@ufl.edu>
 Author URI: http://www.spoonstein.com/
 */
@@ -36,5 +36,4 @@ function uf_template_color_scheme() {
 	    return $color_scheme;
 	}
 }
-
 ?>
