@@ -6,8 +6,6 @@ require_once(UF_PLUGIN_FRAMEWORK_LIBRARY . '/class.UfPlugin.php');
 
 if (! class_exists('UfTemplateColorSchemesPlugin')) {
 	class UfTemplateColorSchemesPlugin extends UfPlugin {
-	        var $color_scheme = "";
-
 		function UfTemplateColorSchemesPlugin($name, $file) {
 		    $source = UF_TEMPLATE_COLOR_SCHEMES_PLUGIN_URL . '/screenshots/';
 		    $radioOptions = array();

@@ -23,10 +23,7 @@ function uf_template_color_schemes_plugins_loaded() {
 }
 
 function uf_template_color_scheme() {
-	global $uf_template_color_schemes_plugin;
-  
-        $color_scheme = null;
-	$color_scheme = $uf_template_color_schemes_plugin->color_scheme;
+	$color_scheme = get_option('uf_template_color_scheme'); 
 
 	if($color_scheme) {
 	    return $color_scheme;
