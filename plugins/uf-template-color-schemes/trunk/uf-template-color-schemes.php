@@ -13,17 +13,13 @@ define('UF_TEMPLATE_COLOR_SCHEMES_PLUGIN_URL', WP_PLUGIN_URL . '/' . str_replace
 
 // Load the plugin after the framework
 add_action('plugins_loaded', 'uf_template_color_schemes_plugins_loaded');
-//add_action('wp_head', 'uf_template_color_schemes_display');
 
 $uf_template_color_schemes_plugin = null;
 function uf_template_color_schemes_plugins_loaded() {
 	global $uf_template_color_schemes_plugin;
 
-        require_once('models/class.UfTemplateColorScheme.php');
-	$color_scheme = new UfTemplateColorScheme(get_option('blogname'), get_option('uf_template_color_scheme'));
-
 	require_once('plugins/class.UfTemplateColorSchemesPlugin.php');
-	$uf_template_color_schemes_plugin = new UfTemplateColorSchemesPlugin('Color Schemes', __FILE__, $color_scheme->color_scheme);
+	$uf_template_color_schemes_plugin = new UfTemplateColorSchemesPlugin('Color Schemes', __FILE__);
 }
 
 function uf_template_color_scheme() {
